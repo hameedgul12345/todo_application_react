@@ -1,0 +1,55 @@
+// import React, { useState } from "react";
+// import "./Todo.css";
+
+// function Todo() {
+//   // State for the input value and the task list
+//   const [inputValue, setInputValue] = useState(""); 
+//   const [task, setTask] = useState([]); // Manage tasks as state
+  
+//   // Function to capture input value from the text box
+//   function takeInput(event) {
+//     setInputValue(event.target.value); // Update inputValue state
+//   }
+
+//   // Function to add a new task to the task array
+//   function addTask(event) {
+//     event.preventDefault();
+    
+//     if (inputValue.trim() !== "") { // Ensure input is not empty
+//       console.log(task)
+//       setTask([...task, inputValue]); // Add the new task to the task array
+//       console.log([...task, inputValue])
+//       setInputValue(""); // Clear input field after adding the task
+//     }
+//   }
+
+//   return (
+//     <section className="todo-container">
+//       <header>
+//         <h2>Todo List Application</h2>
+//       </header>
+//       <section className="form">
+//         <form>
+//           <div className="input-container">
+//             <input
+//               type="text"
+//               placeholder="Enter Task"
+//               value={inputValue}
+//               onChange={(e) => takeInput(e)}
+//             />
+//             <button onClick={(e) => addTask(e)}>Add Task</button>
+//           </div>
+//         </form>
+
+//         {/* Rendering the list of tasks */}
+//         <ul>
+//           {task.map((t, index) => (
+//             <li key={index}>{t}</li> // Use index as key for the list items
+//           ))}
+//         </ul>
+//       </section>
+//     </section>
+//   );
+// }
+
+// export default Todo;
